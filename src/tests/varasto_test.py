@@ -80,6 +80,6 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(varasto.saldo, 0)
 
     def test_ei_voi_asettaa_tilavuutta_suurempaa_saldoa(self):
-        varasto = Varasto(10, 40)
+        varasto = Varasto(10, 20)
 
         self.assertAlmostEqual(varasto.saldo, 10)
